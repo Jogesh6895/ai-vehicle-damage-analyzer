@@ -44,21 +44,25 @@ pip install -r requirements.txt
 ## Project Structure
 
 ```
-new_implementation/
+ai_vehicle_damage_analyzer/
 ├── src/                    # Source code modules
 │   ├── __init__.py
 │   ├── config.py          # Configuration management
-│   ├── file_handler.py    # File I/O operations
-│   ├── ollama_client.py   # Ollama API client
-│   ├── image_analyzer.py  # Image analysis logic
 │   ├── cost_estimator.py  # Cost calculation logic
-│   └── report_generator.py # Report generation
+│   ├── file_handler.py    # File I/O operations
+│   ├── image_analyzer.py  # Image analysis logic
+│   ├── main.py            # CLI interface
+│   ├── ollama_client.py   # Ollama API client
+│   ├── report_generator.py # Report generation
+│   └── web_ui.py          # Streamlit web UI
 ├── input_data/            # Input images directory
 ├── output_data/           # Output reports directory
-├── requirements.txt       # Python dependencies
 ├── .gitignore            # Git ignore rules
+├── agents                # Task management file
+├── IMPLEMENTATION_SUMMARY.md # Implementation summary
+├── LICENSE               # License file
 ├── README.md             # This file
-├── agents               # Task management file
+├── requirements.txt       # Python dependencies
 └── TASK_LIST.md         # Implementation progress tracker
 ```
 

@@ -10,7 +10,7 @@ priority=high
 
 [task_2]
 id=task_2
-description=Create project directory structure: new_implementation/input_data, new_implementation/output_data, new_implementation/src
+description=Create project directory structure: input_data, output_data, src
 status=completed
 priority=high
 
