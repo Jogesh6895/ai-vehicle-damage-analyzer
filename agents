@@ -1,0 +1,243 @@
+# Vehicle Damage Analyzer - Project Agents File
+# This file defines the agent structure and task management for the project
+
+[project]
+name=Vehicle Damage Analyzer
+version=1.0.0
+description=Modular vehicle damage analysis application with AI vision capabilities
+author=Your Name
+license=MIT
+
+[agents]
+# Core agents responsible for different aspects of the project
+
+[agent.core]
+name=Core Development Agent
+responsibilities=[
+    "Implement core modular architecture",
+    "Create configuration management system",
+    "Develop file handling utilities",
+    "Build Ollama API client wrapper"
+]
+status=active
+
+[agent.analysis]
+name=Analysis Agent
+responsibilities=[
+    "Implement image analysis logic",
+    "Develop cost estimation algorithms",
+    "Create damage detection pipeline"
+]
+status=active
+
+[agent.ui]
+name=User Interface Agent
+responsibilities=[
+    "Build CLI interface",
+    "Implement Streamlit web UI",
+    "Design user interaction flows"
+]
+status=active
+
+[agent.testing]
+name=Testing Agent
+responsibilities=[
+    "Create unit tests",
+    "Integration testing",
+    "Error handling validation"
+]
+status=pending
+
+[agent.documentation]
+name=Documentation Agent
+responsibilities=[
+    "Write code comments",
+    "Create docstrings",
+    "Maintain README",
+    "Generate API documentation"
+]
+status=active
+
+[modules]
+# Project modules and their current status
+
+[module.config]
+name=Configuration Module
+file=src/config.py
+description=Manages application settings and environment variables
+status=completed
+dependencies=[]
+
+[module.file_handler]
+name=File Handler Module
+file=src/file_handler.py
+description=Handles input/output file operations and directory management
+status=completed
+dependencies=[config]
+
+[module.ollama_client]
+name=Ollama Client Module
+file=src/ollama_client.py
+description=Wrapper for Ollama API interactions
+status=completed
+dependencies=[config]
+
+[module.image_analyzer]
+name=Image Analyzer Module
+file=src/image_analyzer.py
+description=Performs AI-based image analysis using vision models
+status=completed
+dependencies=[ollama_client]
+
+[module.cost_estimator]
+name=Cost Estimator Module
+file=src/cost_estimator.py
+description=Calculates repair costs based on damage analysis
+status=completed
+dependencies=[image_analyzer]
+
+[module.report_generator]
+name=Report Generator Module
+file=src/report_generator.py
+description=Generates CSV reports from analysis results
+status=completed
+dependencies=[file_handler]
+
+[module.main]
+name=Main Module
+file=src/main.py
+description=Entry point for CLI application
+status=completed
+dependencies=[config, file_handler, image_analyzer, cost_estimator, report_generator]
+
+[module.web_ui]
+name=Web UI Module
+file=src/web_ui.py
+description=Streamlit-based web interface
+status=completed
+dependencies=[config, file_handler, image_analyzer, cost_estimator, report_generator]
+
+[modes]
+# Available operation modes
+
+[mode.interactive]
+name=Interactive CLI
+description=Interactive command-line interface for single image analysis
+status=completed
+priority=high
+
+[mode.batch]
+name=Batch Processing
+description=Process multiple images from a directory
+status=completed
+priority=high
+
+[mode.api]
+name=API Mode
+description=Programmatic API for integration with other systems
+status=completed
+priority=medium
+
+[mode.web]
+name=Web UI
+description=Streamlit-based web interface
+status=completed
+priority=medium
+
+[directories]
+# Project directories and their purposes
+
+[dir.input_data]
+name=Input Data Directory
+path=input_data
+description=Contains input images for analysis
+status=created
+
+[dir.output_data]
+name=Output Data Directory
+path=output_data
+description=Contains generated reports and analysis results
+status=created
+
+[dir.src]
+name=Source Code Directory
+path=src
+description=Contains all source code modules
+status=created
+
+[dir.logs]
+name=Logs Directory
+path=logs
+description=Contains application log files
+status=pending
+
+[workflows]
+# Development workflows
+
+[workflow.setup]
+name=Project Setup
+steps=[
+    "Create directory structure",
+    "Initialize configuration files",
+    "Set up dependencies"
+]
+status=completed
+
+[workflow.core]
+name=Core Implementation
+steps=[
+    "Implement config module",
+    "Implement file handler module",
+    "Implement ollama client module"
+]
+status=completed
+
+[workflow.analysis]
+name=Analysis Implementation
+steps=[
+    "Implement image analyzer module",
+    "Implement cost estimator module",
+    "Implement report generator module"
+]
+status=completed
+
+[workflow.ui]
+name=UI Implementation
+steps=[
+    "Implement CLI interface",
+    "Implement web UI",
+    "Add error handling"
+]
+status=completed
+
+[workflow.testing]
+name=Testing and Validation
+steps=[
+    "Unit testing",
+    "Integration testing",
+    "Security validation"
+]
+status=completed
+
+[workflow.documentation]
+name=Documentation
+steps=[
+    "Add code comments",
+    "Create docstrings",
+    "Update README"
+]
+status=completed
+
+[metadata]
+# Project metadata for tracking
+
+[metadata.progress]
+total_tasks=19
+completed_tasks=19
+in_progress_tasks=0
+pending_tasks=0
+completion_percentage=100.00
+
+[metadata.last_updated]
+date=2026-01-30
+time=13:30:00
