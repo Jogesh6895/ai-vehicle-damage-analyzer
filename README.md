@@ -1,5 +1,14 @@
 # Vehicle Damage Analyzer
 
+[![Python](https://img.shields.io/badge/Python-3.9+-blue)](https://www.python.org/)
+[![Ollama](https://img.shields.io/badge/Ollama-AI%20Vision-orange)](https://ollama.ai/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Web%20UI-red)](https://streamlit.io/)
+[![Pandas](https://img.shields.io/badge/Pandas-Data%20Processing-purple)](https://pandas.pydata.org/)
+[![Pillow](https://img.shields.io/badge/Pillow-Image%20Processing-green)](https://python-pillow.org/)
+[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
+[![Open Source](https://img.shields.io/badge/Open%20Source-%E2%9D%A4-brightgreen)](#-contributing)
+[![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-blueviolet)](#contributing)
+
 A modular, extensible application for analyzing vehicle damage using AI vision models. Supports multiple operation modes including interactive CLI, batch processing, and web interface.
 
 ## Features
